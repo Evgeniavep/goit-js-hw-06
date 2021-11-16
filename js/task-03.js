@@ -18,6 +18,6 @@ const galleryList = document.querySelector('ul');
 const gallery = images
     .map((el) =>
         `<li><img src= ${el.url} alt = ${el.alt} class="gallery_item"/></li> `
-    );
+    ).join('');
 
 galleryList.insertAdjacentHTML("beforeend", gallery)
